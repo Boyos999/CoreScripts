@@ -190,8 +190,11 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
     local addedVariableScopes = {
         globals = {
             ignored = {
+                -- MWSE/openmw lua variables
+                "MWSE_BUILD", "T_Glob_OpenMwLuaUsed",
+
                 -- game state
-                "TR_MapPos", "TR_CellX", "TR_CellY", "TR_Test", "PC_NoLore", "T_Glob_cleanup_x", "T_Glob_cleanup_y", 
+                "TR_MapPos", "TR_CellX", "TR_CellY", "TR_Test", "T_Glob_cleanup_x", "T_Glob_cleanup_y", 
                 "T_Glob_cleanup_z", "T_Glob_cleanup_state", "T_Glob_DWelk_cleanup", "T_Glb_GetTeleportingDisabled", 
                 "T_Glob_PassTimeHours", "T_Glob_GetTeleportingDisabled", "T_Glob_Speech_Debug", "T_Glob_Speech_Sway", 
                 "T_Glob_Speech_Haggle", "T_Glob_Speech_Debate", 
@@ -204,22 +207,55 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
                 "T_Glob_CardHortCol1Lock2", "T_Glob_CardHortCol2Lock2", "T_Glob_CardHortCol3Lock2", "T_Glob_CardHortCol4Lock2", 
                 "T_Glob_CardHortCol5Lock2", "T_Glob_CardHortCol6Lock2", "T_Glob_CardHortSaveLoad", "T_Glob_CardHortActiveLen",
                 "T_Glob_CardHortTop", "T_Glob_CardHortDummy", "T_Glob_CardHortState", "T_Glob_CardHortTracker", "T_Glob_CardHortRow",
-                "T_Glob_CardHortRot", "T_Glob_CardHortRank", "T_Glob_CardHortCol", "T_Glob_CardHortHouse"
+                "T_Glob_CardHortRot", "T_Glob_CardHortRank", "T_Glob_CardHortCol", "T_Glob_CardHortHouse",
+
+                -- Nine holes
+                "T_Glob_NineholesBet", "T_Glob_NineholesGameState", "T_Glob_NineholesNpcId", "T_Glob_NineholesOpponentId",
+                "T_Glob_NineholesPlayerColor", "T_Glob_NineholesPlayerTurn", "T_Glob_NineholesPosTakenBy_01a", "T_Glob_NineholesPosTakenBy_01b",
+                "T_Glob_NineholesPosTakenBy_01c", "T_Glob_NineholesPosTakenBy_02a", "T_Glob_NineholesPosTakenBy_02b", "T_Glob_NineholesPosTakenBy_02c",
+                "T_Glob_NineholesPosTakenBy_03a", "T_Glob_NineholesPosTakenBy_03b", "T_Glob_NineholesPosTakenBy_03c", "T_Glob_NineholesPracticeMode",
+                "T_Glob_NineholesSelectedPin", 
+                -- Bank temp variable that doesn't need to be saved
+                "T_Glob_Bank_All_TempAmount",
+
+                -- Unused
+                "T_Glob_JNS_BountyClear"
                 
             },
             personal = {
                 -- player state
-                "T_Glob_PorphyricInfected", "T_Glob_WereInfected",
+                "T_Glob_PorphyricInfected", "T_Glob_WereInfected", "T_Glob_VampDamageRemove",
                 
                 -- Bank accounts
-                "T_Glob_Bank_All_CurrentBank", "T_Glob_Bank_Bri_AcctAmount", "T_Glob_Bank_Bri_LoanAmount",
-                "T_Glob_Bank_Bri_LoanDate", "T_Glob_Bank_Bri_LoanFail", "T_Glob_Bank_Hla_LoanFail", "T_Glob_Bank_Hla_AcctAmount",
-                "T_Glob_Bank_Hla_LoanAmount", "T_Glob_Bank_Hla_LoanDate",
+                "T_Glob_Bank_All_CurrentBank", 
+                "T_Glob_Bank_Bri_AcctAmount", "T_Glob_Bank_Bri_LoanAmount", "T_Glob_Bank_Bri_LoanDate", "T_Glob_Bank_Bri_LoanFail",
+                "T_Glob_Bank_Cmp_AcctAmount", "T_Glob_Bank_Cmp_LoanAmount", "T_Glob_Bank_Cmp_LoanDate", "T_Glob_Bank_Cmp_LoanFail",
+                "T_Glob_Bank_Cro_AcctAmount", "T_Glob_Bank_Cro_LoanAmount", "T_Glob_Bank_Cro_LoanDate", "T_Glob_Bank_Cro_LoanFail",
+                "T_Glob_Bank_Hla_LoanFail", "T_Glob_Bank_Hla_AcctAmount", "T_Glob_Bank_Hla_LoanAmount", "T_Glob_Bank_Hla_LoanDate",
+                "T_Glob_Bank_Mas_AcctAmount", "T_Glob_Bank_Mas_LoanAmount", "T_Glob_Bank_Mas_LoanDate", "T_Glob_Bank_Mas_LoanFail",
+
+                -- stock market, variable tracking how many stocks a player owns
+                "T_Glob_StockCompareATC", "T_Glob_StockCompareBIC", "T_Glob_StockCompareCMC", "T_Glob_StockCompareCWA",
+                "T_Glob_StockCompareEEC", "T_Glob_StockCompareNWT", "T_Glob_StockCompareRHC", "T_Glob_StockCompareSTC",
+                "T_Glob_StockCompareWSC", "T_Glob_StockCountPlayerATC", "T_Glob_StockCountPlayerBIC", "T_Glob_StockCountPlayerCMC",
+                "T_Glob_StockCountPlayerCWA", "T_Glob_StockCountPlayerEEC", "T_Glob_StockCountPlayerNWT", "T_Glob_StockCountPlayerRHC",
+                "T_Glob_StockCountPlayerSTC", "T_Glob_StockCountPlayerWSC", "T_Glob_StockPayout001", "T_Glob_StockPayout005",
+                "T_Glob_StockPayout010", "T_Glob_StockPayout050", "T_Glob_StockPayout100", "T_Glob_StockPayoutAll",
+                "T_Glob_StockRequest", "T_Glob_StockSellCount", "T_Glob_StockSellPrice", "T_Glob_StockStarted",
+                "T_Glob_StockValueTradedToday"
                 
             },
             quest = {
                 -- reputation
-                "T_Glob_Rep_Sky_Pr", "T_Glob_Rep_Sky_Re"
+                "T_Glob_Rep_Cyr", "T_Glob_Rep_HR", "T_Glob_Rep_Ham", "T_Glob_Rep_MW", 
+                "T_Glob_Rep_PI", "T_Glob_Rep_Sky",
+                -- stock market prices, these react to quest outcomes
+                "T_Glob_StockBaseATC", "T_Glob_StockBaseBIC", "T_Glob_StockBaseCMC", "T_Glob_StockBaseCWA",
+                "T_Glob_StockBaseEEC", "T_Glob_StockBaseNWT", "T_Glob_StockBaseRHC", "T_Glob_StockBaseSTC",
+                "T_Glob_StockBaseWSC", "T_Glob_StockPriceATC", "T_Glob_StockPriceBIC", "T_Glob_StockPriceCMC",
+                "T_Glob_StockPriceCWA", "T_Glob_StockPriceEEC", "T_Glob_StockPriceNWT", "T_Glob_StockPriceRHC",
+                "T_Glob_StockPriceSTC", "T_Glob_StockPriceWSC"
+
             },
             kills = {
             
@@ -228,15 +264,33 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
                 
             },
             factionExpulsion = {
+                -- Cyrodiil faction explusions
+                "T_Glob_Exp_Cyr_FG", "T_Glob_Exp_Cyr_TG", "T_Glob_Exp_Itin_Priests", "T_Glob_Exp_King_Anv",
+                -- Skyrim faction explusions
+                "T_Glob_Exp_Sky_FG", "T_Glob_Exp_Sky_TG" 
                 
             },
             worldwide = {
                 -- mechanisms
                 "T_Glob_SutchElevDir", "T_Glob_SutchElevRest", "T_Glob_SutchElevUpDownCounter",
+                -- Daedric wards
+                "T_Glob_DaeWardAState", "T_Glob_DaeWardBState", "T_Glob_DaeWardCState", "T_Glob_DaeWardDState",
+                "T_Glob_DaeWardEState", "T_Glob_DaeWardFState", "T_Glob_DaeWardGState", "T_Glob_DaeWardHState",
+                "T_Glob_DaeWardIState", "T_Glob_DaeWardJState", "T_Glob_DaeWardKState", "T_Glob_DaeWardLState",
+                "T_Glob_DaeWardMState", "T_Glob_DaeWardNState", "T_Glob_DaeWardOState", "T_Glob_DaeWardPState",
+                "T_Glob_DaeWardQState", "T_Glob_DaeWardRState", "T_Glob_DaeWardSState", "T_Glob_DaeWardTState",
+                "T_Glob_DaeWardUState", "T_Glob_DaeWardVState", "T_Glob_DaeWardWState", "T_Glob_DaeWardZState",
                 -- objects
-                "T_Glob_KingOrgCoffer_Uses",
+                "T_Glob_KingOrgCoffer_Uses", "T_Glob_KingOrgCoffer_Gold", "T_Glob_PlesioHatchPC", "T_Glob_TR_PreviewEnabled",
                 -- news
-                "T_Glob_News_Bellman_Pick1", "T_Glob_News_Bellman_Pick2", "T_Glob_News_Bellman_Tracker1", "T_Glob_News_Bellman_Tracker2"                
+                "T_Glob_News_AbMonitor_Pick1", "T_Glob_News_AbMonitor_Pick2", "T_Glob_News_AbMonitor_Tracker1", "T_Glob_News_AbMonitor_Tracker2",
+                "T_Glob_News_Bellman_Pick1", "T_Glob_News_Bellman_Pick2", "T_Glob_News_Bellman_Tracker1", "T_Glob_News_Bellman_Tracker2",
+                "T_Glob_News_Echo_Pick1", "T_Glob_News_Echo_Pick2", "T_Glob_News_Echo_Tracker1", "T_Glob_News_Echo_Tracker2",
+                -- PTR interop variables, set via startup scripts
+                "T_Glob_Installed_ABC", "T_Glob_Installed_Bkm", "T_Glob_Installed_Els", "T_Glob_Installed_HR427",
+                "T_Glob_Installed_Ham", "T_Glob_Installed_PC", "T_Glob_Installed_PI", "T_Glob_Installed_SHotN",
+                "T_Glob_Installed_Sum", "T_Glob_Installed_TR", "T_Glob_Installed_TRFM", "T_Glob_Installed_Val",
+                "T_Glob_VanillaOverride"
             },
             unknown = {
                 
