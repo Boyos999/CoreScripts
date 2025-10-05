@@ -215,6 +215,7 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
                 "T_Glob_NineholesPosTakenBy_01c", "T_Glob_NineholesPosTakenBy_02a", "T_Glob_NineholesPosTakenBy_02b", "T_Glob_NineholesPosTakenBy_02c",
                 "T_Glob_NineholesPosTakenBy_03a", "T_Glob_NineholesPosTakenBy_03b", "T_Glob_NineholesPosTakenBy_03c", "T_Glob_NineholesPracticeMode",
                 "T_Glob_NineholesSelectedPin", 
+
                 -- Bank temp variable that doesn't need to be saved
                 "T_Glob_Bank_All_TempAmount",
 
@@ -249,6 +250,7 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
                 -- reputation
                 "T_Glob_Rep_Cyr", "T_Glob_Rep_HR", "T_Glob_Rep_Ham", "T_Glob_Rep_MW", 
                 "T_Glob_Rep_PI", "T_Glob_Rep_Sky",
+
                 -- stock market prices, these react to quest outcomes
                 "T_Glob_StockBaseATC", "T_Glob_StockBaseBIC", "T_Glob_StockBaseCMC", "T_Glob_StockBaseCWA",
                 "T_Glob_StockBaseEEC", "T_Glob_StockBaseNWT", "T_Glob_StockBaseRHC", "T_Glob_StockBaseSTC",
@@ -266,6 +268,7 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
             factionExpulsion = {
                 -- Cyrodiil faction explusions
                 "T_Glob_Exp_Cyr_FG", "T_Glob_Exp_Cyr_TG", "T_Glob_Exp_Itin_Priests", "T_Glob_Exp_King_Anv",
+
                 -- Skyrim faction explusions
                 "T_Glob_Exp_Sky_FG", "T_Glob_Exp_Sky_TG" 
                 
@@ -273,6 +276,7 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
             worldwide = {
                 -- mechanisms
                 "T_Glob_SutchElevDir", "T_Glob_SutchElevRest", "T_Glob_SutchElevUpDownCounter",
+
                 -- Daedric wards
                 "T_Glob_DaeWardAState", "T_Glob_DaeWardBState", "T_Glob_DaeWardCState", "T_Glob_DaeWardDState",
                 "T_Glob_DaeWardEState", "T_Glob_DaeWardFState", "T_Glob_DaeWardGState", "T_Glob_DaeWardHState",
@@ -280,12 +284,15 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
                 "T_Glob_DaeWardMState", "T_Glob_DaeWardNState", "T_Glob_DaeWardOState", "T_Glob_DaeWardPState",
                 "T_Glob_DaeWardQState", "T_Glob_DaeWardRState", "T_Glob_DaeWardSState", "T_Glob_DaeWardTState",
                 "T_Glob_DaeWardUState", "T_Glob_DaeWardVState", "T_Glob_DaeWardWState", "T_Glob_DaeWardZState",
+
                 -- objects
                 "T_Glob_KingOrgCoffer_Uses", "T_Glob_KingOrgCoffer_Gold", "T_Glob_PlesioHatchPC", "T_Glob_TR_PreviewEnabled",
+
                 -- news
                 "T_Glob_News_AbMonitor_Pick1", "T_Glob_News_AbMonitor_Pick2", "T_Glob_News_AbMonitor_Tracker1", "T_Glob_News_AbMonitor_Tracker2",
                 "T_Glob_News_Bellman_Pick1", "T_Glob_News_Bellman_Pick2", "T_Glob_News_Bellman_Tracker1", "T_Glob_News_Bellman_Tracker2",
                 "T_Glob_News_Echo_Pick1", "T_Glob_News_Echo_Pick2", "T_Glob_News_Echo_Tracker1", "T_Glob_News_Echo_Tracker2",
+                
                 -- PTR interop variables, set via startup scripts
                 "T_Glob_Installed_ABC", "T_Glob_Installed_Bkm", "T_Glob_Installed_Els", "T_Glob_Installed_HR427",
                 "T_Glob_Installed_Ham", "T_Glob_Installed_PC", "T_Glob_Installed_PI", "T_Glob_Installed_SHotN",
