@@ -401,23 +401,64 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "TR_Mainland.ESM")
     tableHelper.merge(clientVariableScopes, addedVariableScopes, true)
 end
 
-if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Cyrodiil_Main.esm") then
+if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Cyr_Main.esm") then
 
     local addedVariableScopes = {
         globals = {
             ignored = {
                 -- not actually used at all
-                "PC_Q1_2_State", "PC_Q1_4_State", "PC_Q1_5_Travel"
+                "PC_FavorAkatosh", "PC_FavorArkay", "PC_FavorDibella", "PC_FavorJulianos",
+                "PC_FavorKynareth", "PC_FavorMara", "PC_FavorStendarr", "PC_FavorTalos",
+                "PC_FavorZenithar", "PC_Glb_ExpFightersGuild", "PC_m1_MG_Cha2_Debt",
+
+                -- Player equipment
+                "PC_m1_AFP_Costume_sc",
+
+                -- Set correctly as is
+                "PC_m0_Vva_TropVac_Dest", "PC_m0_Vva_TropVac_Hours", "PC_m1_Anv_Bounty_CrypsisHours"
             },
             personal = {
                 -- tavern rents
-                "PC_Rent_Stirk_Sloads_Tale", "PC_Rent_Stirk_Safe_Harbor"
+                "PC_m1_Rented_Abecette", "PC_m1_Rented_AllFlags", "PC_m1_Rented_AnchorsRest", "PC_m1_Rented_BlindWatchtower",
+                "PC_m1_Rented_Caravan", "PC_m1_Rented_Crossing", "PC_m1_Rented_Gosha", "PC_m1_Rented_IronMan",
+                "PC_m1_Rented_OldSeawater", "PC_m1_Rented_Spearmouth", "PC_m1_Rented_Sunset",
+
+                -- Mercenary Contracts
+                "PC_m1_M_CylinaDaysLeft", "PC_m1_M_CylinaStartDay", "PC_m1_M_CylinaStartMonth",
+                "PC_m1_M_SeguriusDaysLeft", "PC_m1_M_SeguriusStartDay", "PC_m1_M_SeguriusStartMonth",
+                "PC_m1_M_TorbarnDaysLeft", "PC_m1_M_TorbarnStartDay", "PC_m1_M_TorbarnStartMonth",
+
+                -- player actions
+                "PC_m0_Vva_TropVac_TravelKaltan", "PC_m0_Vva_TropVac_TravelTitus", "PC_m1_Anv_BlkView_Detected", "PC_m1_Anv_BlkView_SoulGemType",
+                "PC_m1_Anv_WorkOrc_Disp", "PC_m1_CrypsisCrew_Aggro", "PC_m1_IP_Lki4_StateRitual", "PC_m1_IP_Lki_DibellanKilled",
+                "PC_m1_IP_Run2_Killed", "PC_m1_PadrulRingState", "PC_m1_SC_GarAge_ArchaeKilled", "PC_m1_SC_GarAge_AuroranSummoned",
+                "PC_m1_SC_GarAge_BucynarelKeyst", "PC_m1_SC_GoatTrbls_Attacked", "PC_m1_TG_Anv4_BetAmount", "PC_m1_TG_Anv4_BetState",
+                "PC_m1_TG_Anv4_WinAmount", "PC_m1_TG_Cha4_Detected",
+
+                -- Once off rumor variables
+                "PC_m1_Anv_WellMet_DialFilter", "PC_m0_Vva_TropVac_Rumor"
             },
             quest = {
-                
+                -- Miscellaneous quest related variables
+                "PC_m1_Anv_AdvRead_BarubiState", "PC_m1_Anv_AdvRead_PotionOffered", "PC_m1_Anv_BlkView_Storming", "PC_m1_Anv_BookClub_State",
+                "PC_m1_Anv_GlimpseBodyFound", "PC_m1_Anv_ImpCause_HasiDisobey", "PC_m1_Anv_OceanBlue_ATCGold", "PC_m1_BC_KhaRaji_SealedLtrGlb",
+                "PC_m1_Cha_Cassynder_Drugs", "PC_m1_Cha_FigSpeech_AmulStolen", "PC_m1_Cha_PelLeg_Refuse", "PC_m1_FG_Anv5_PaintingOwner",
+                "PC_m1_IP_Als3_NoteSkip", "PC_m1_IP_Als4_Convince", "PC_m1_IP_GS2_Donation", "PC_m1_IP_HY1_StateKuram",
+                "PC_m1_IP_HY2_NoHostile", "PC_m1_IP_Lki4_KeladRattedOut",  "PC_m1_IP_Lki4_PCDrowner", "PC_m1_IP_Run1_CanPay",
+                "PC_m1_IP_Run1_Donations", "PC_m1_IP_Run2_Cured", "PC_m1_IP_Run3_Persarine", "PC_m1_K1_HT1_SolvusTold",
+                "PC_m1_K1_HT1_TowerRobbed", "PC_m1_K1_HT_HighAlert", "PC_m1_K1_MC2_Method", "PC_m1_K1_MC6_BoardConvinced",
+                "PC_m1_K1_MC8_Aftermath", "PC_m1_K1_RP2_CultTalked", "PC_m1_K1_RP3_NoCash", "PC_m1_MG_BC1_TorioTalked",
+                "PC_m1_MG_BC3_RingCheck", "PC_m1_MG_Cha4_AuroranSummon", "PC_m1_MG_Cha4_BigUpArdavan", "PC_m1_StrokeFort_BeatUp",
+                "PC_m1_TG_Anv7_Outcome", "PC_m1_TG_Anv7_Points", "PC_m1_Tvy_NobleDebt_Convinced",
+
+                -- Bounty quests
+                "PC_m1_Anv_Bounty_AnnkaCaptured", "PC_m1_Anv_Bounty_MCCaptured", "PC_m1_Anv_Bounty_RueCaptured", "PC_m1_Anv_Bounty_RycimaCaptured"
             },
             kills = {
-
+                -- Misc quests
+                "PC_m1_Anv_BookClub_DeadCount", "PC_m1_Anv_MidLife_BanditDead", "PC_m1_Anv_MidLife_OrcDead","PC_m1_FG_Anv5_GuardDeath",
+                "PC_m1_IP_HY2_BanditKilled", "PC_m1_K1_HT5_GuardDead", "PC_m1_K1_MC6_BoardKilled", "PC_m1_MG_Anv5_UndeadKilled",
+                "PC_m1_MG_Cha4_GobsKilled", "PC_m1_Tvy_ThresvyDef_Kills"
             },
             factionRanks = {
                 
@@ -427,7 +468,16 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Cyrodiil_Main.esm
             },
             worldwide = {
                 -- mechanisms
-                "PC_i1_51_Gate_State"
+                "PC_m1_FHe_GateState", "PC_m1_FSm_WallState",
+
+                -- Actor/object state variables
+                "PC_m1_Anv_Bounty_CrypsisMoved", "PC_m1_Anv_EnmanAirshipState", "PC_m1_Anv_EnmanAirshipState", "PC_m1_Anv_WellMet_TrackReymanus",
+                "PC_m1_Anv_WellMet_TrackWynn", "PC_m1_Cha_GhastOrd_Moved", "PC_m1_Cha_GoldNets_Meeting", "PC_m1_Cha_MG_NymonaHatchGlob",
+                "PC_m1_FHe_ElvState","PC_m1_IP_Als1_Return", "PC_m1_IP_HY_StateMove", "PC_m1_K1_HT1_StateSonkha",
+                "PC_m1_K1_HT4_MeetDay", "PC_m1_K1_RP2_WallFixed", "PC_m1_K1_VT_KyroState", "PC_m1_TG_Cha4_DI",
+
+                -- Arena state
+                "PC_m1_AFP_DuelActive", "PC_m1_AFP_DuelCurrent", "PC_m1_AFP_DuelMulti", "PC_m1_TG_Anv4_MatchState"
             },
             unknown = {
                 
