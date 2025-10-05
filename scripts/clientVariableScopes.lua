@@ -232,7 +232,7 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
                 "T_Glob_Bank_Bri_AcctAmount", "T_Glob_Bank_Bri_LoanAmount", "T_Glob_Bank_Bri_LoanDate", "T_Glob_Bank_Bri_LoanFail",
                 "T_Glob_Bank_Cmp_AcctAmount", "T_Glob_Bank_Cmp_LoanAmount", "T_Glob_Bank_Cmp_LoanDate", "T_Glob_Bank_Cmp_LoanFail",
                 "T_Glob_Bank_Cro_AcctAmount", "T_Glob_Bank_Cro_LoanAmount", "T_Glob_Bank_Cro_LoanDate", "T_Glob_Bank_Cro_LoanFail",
-                "T_Glob_Bank_Hla_LoanFail", "T_Glob_Bank_Hla_AcctAmount", "T_Glob_Bank_Hla_LoanAmount", "T_Glob_Bank_Hla_LoanDate",
+                "T_Glob_Bank_Hla_AcctAmount", "T_Glob_Bank_Hla_LoanAmount", "T_Glob_Bank_Hla_LoanDate", "T_Glob_Bank_Hla_LoanFail",
                 "T_Glob_Bank_Mas_AcctAmount", "T_Glob_Bank_Mas_LoanAmount", "T_Glob_Bank_Mas_LoanDate", "T_Glob_Bank_Mas_LoanFail",
 
                 -- stock market, variable tracking how many stocks a player owns
@@ -292,7 +292,7 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
                 "T_Glob_News_AbMonitor_Pick1", "T_Glob_News_AbMonitor_Pick2", "T_Glob_News_AbMonitor_Tracker1", "T_Glob_News_AbMonitor_Tracker2",
                 "T_Glob_News_Bellman_Pick1", "T_Glob_News_Bellman_Pick2", "T_Glob_News_Bellman_Tracker1", "T_Glob_News_Bellman_Tracker2",
                 "T_Glob_News_Echo_Pick1", "T_Glob_News_Echo_Pick2", "T_Glob_News_Echo_Tracker1", "T_Glob_News_Echo_Tracker2",
-                
+
                 -- PTR interop variables, set via startup scripts
                 "T_Glob_Installed_ABC", "T_Glob_Installed_Bkm", "T_Glob_Installed_Els", "T_Glob_Installed_HR427",
                 "T_Glob_Installed_Ham", "T_Glob_Installed_PC", "T_Glob_Installed_PI", "T_Glob_Installed_SHotN",
