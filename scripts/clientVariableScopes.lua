@@ -494,69 +494,67 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Sky_Main.esm") th
         globals = {
             ignored = {
                 -- game state
-                "Sky_qRe_KG1_global", "Sky_TempVar_glb",
+                "Sky_TempVar_glb",
+
                 -- quest variables that are already set correctly without being synced
-                "Sky_qRe_DSW04_BreadCounter_glb",
+                "Sky_qRe_DSW4_BreadCounter_glb",
+
                 -- not actually used at all
-                "Sky_iRe_DH99_Wine_glb", "sky_qRe_KG4_AmbCount", "sky_qRe_KG4_Day",
-                "sky_qRe_KG4_Day2"
+                "Sky_qRe_DH5_Wine_glb", "Sky_qRe_DSE_Register04_glb", "sky_qRe_KG4_AmbCount", "sky_qRe_KG4_Day", 
+                "sky_qRe_KG4_Day2" 
             },
             personal = {
-                -- player state
-                "Sky_qRe_KG4_Transformed_glb",
                 -- tavern rents
                 "Sky_Rent_DSE_Shadowkey", "Sky_Rent_DSW_DragonFountain", "Sky_Rent_DSW_NukraTikil", 
                 "Sky_Rent_HA_Jhorcian", "Sky_Rent_KW_Dancing_Saber", "Sky_Rent_KW_Ruby_Drake",
                 "Sky_Rent_LH_Daracam", "Sky_Rent_MER_Rhuma", "Sky_Rent_VF_EvenOddsInn",
+
                 -- mercenary contracts
-                "Sky_Merc_Rismund_DaysLeft",
+                "Sky_Merc_Rismund_DaysLeft", "Sky_Merc_KW_Rismund_K_Day", "Sky_Merc_KW_Rismund_K_Month",
+                "Sky_Merc_DSW_Zanarhi_DaysLeft", "Sky_Merc_DSW_Zanarhi_K_Day", "Sky_Merc_DSW_Zanarhi_K_Month",
+
                 -- miscellaneous variables related to player-specific actions
-                "Sky_qRe_BM04_Door_glb", "Sky_qRe_KW01_Book1_glb", "Sky_qRe_KW01_Book2_glb", 
-                "Sky_qRe_KW01_Book3_glb", "Sky_qRe_KW01_Book4_glb"
+                "Sky_qRe_BM4_Door_glb", "Sky_qRe_HA1_SkullPlaced_glb", "Sky_qRe_KW1a_Journal_glb", "Sky_qRe_KW1b_Journal_glb",
+                "Sky_qRe_KW1c_Journal_glb", "Sky_qRe_KW1d_Journal_glb", "Sky_qRe_KW_SogatAggro"
             },
             quest = {
-
                 -- other side quests
-                "Sky_qRe-Vornd1_GLOBAL1", "Sky_qRe-Vornd1_GLOBAL2", "Sky_qRe_DSE01_Donation_glb", 
-                "Sky_qRe_DSTG03_Informants_glb", "Sky_qRe_DSTG07_MoveCael_glb", "Sky_qRe_DSW01_CacheFound_glb",
-                "Sky_qRe_DSW01_Dagger_glb", "Sky_qRe_DSW01_Scimitar_glb", "Sky_qRe_DSW01_Saber_glb", 
-                "Sky_qRe_DSW02_Auth_glb", "Sky_qRe_KG5_SViir_glb", "Sky_qRe_KWFG04_Owner_glb", 
-                "Sky_qRE_KWTG07_Glb_QuestDone", "Sky_qRe_MAI04_Counter_glb", "Sky_qRe_NAR01_Investigate_glb"
-                
+                "Sky_qRe_DH2_glb", "Sky_qRe_DSB5_Counter_glb", "Sky_qRe_DSE1_Donation_glb",
+                "Sky_qRe_DSTG3_Informants_glb", "Sky_qRe_DSTG7_MoveCael_glb", "Sky_qRe_DSW1_CacheFound_glb", "Sky_qRe_DSW1_Dagger_glb",
+                "Sky_qRe_DSW1_Scimitar_glb", "Sky_qRe_DSW1_Saber_glb", "Sky_qRe_DSW2_Auth_glb", "Sky_qRe_KG5_SViir_glb",
+                "Sky_qRe_KWFG4_Owner_glb", "Sky_qRe_KWTG8_Owner_glb", "Sky_qRe_MAI4_Counter_glb", "Sky_qRe_NAR1_Investigate_glb"
             },
             kills = {
                 -- main quest
                 "Sky_qRe_DSMQ_AlaktolDead", "Sky_qRe_DSMQ_JonaDead",
+
                 -- side quests
-                "Sky_qRe_Ald1_global", "Sky_qRe_DS_B01_AlreadyDead_glb", "Sky_qRe_DS_B02_AlreadyDead_glb", 
-                "Sky_qRe_DS_B05_Counter_glb", "Sky_qRe_DSW01_MesaraDead_glb", "Sky_qRe_BM_FhegainDead_glb",
-                "Sky_qRe_HA1_glb_KillCheck", "Sky_qRe_HA1_RilorDead_glb", "Sky_qRe_KG2_Counter_glb",
-                "Sky_qRe_KG4_Counter", "Sky_qRe_KW_B01_glb_Counter", "Sky_qRe_KW_B02_AlreadyDead",
-                "Sky_qRe_KW_B04_glb_Counter", "Sky_qRe_KW_B06_glb_Counter", "Sky_qRe_KW_B08_glb_Counter",
-                "Sky_qRe_KW_B09_glb_Counter", "Sky_qRe_KW_B10_AlreadyDead", "Sky_qRe_KW_B10_glb_Counter",
-                "Sky_qRe_KW_MG06_GhostsKilled", "sky_qRe_KWFG02_Counter", "sky_qRe_KWFG03_Counter",
-                "Sky_qRe_MAI03_Counter_glb", "Sky_qRe_MAI04_Dead_glb", "Sky_qRE_VF3_Killed_glb",
+                "Sky_qRe_DSW1_MesaraDead_glb", "Sky_qRe_BM_FhegainDead_glb", "Sky_qRe_HA1_KillCheck_glb", "Sky_qRe_KG1_glb", 
+                "Sky_qRe_KG2_Counter_glb", "Sky_qRe_KG4_Counter", "Sky_qRe_KW3_Counter_glb", "sky_qRe_KWFG3_Counter",
+                "Sky_qRe_KWMG6_Counter_glb", "Sky_qRe_VF1_Died_Glb", "Sky_qRe_MAI03_Counter_glb", "Sky_qRe_MAI4_Dead_glb",
+
                 -- arena kill counts
-                "Sky_qRe_DSE04_Count02_glb", "Sky_qRe_DSE04_Count03_glb", "Sky_qRe_DSE04_Count05_glb", 
-                "Sky_qRe_DSE04_Count07_glb"
+                "Sky_qRe_DSE4_Count02_glb", "Sky_qRe_DSE4_Count03_glb", "Sky_qRe_DSE4_Count05_glb", "Sky_qRe_DSE4_Count07_glb"
             },
             factionRanks = {
                 -- faction reputation
                 "Sky_qRe_DSMG_Rep_Glb", "Sky_Rep_FireHand_glb",
+
                 -- membership in mini-factions
-                "Sky_qRe_DSE04_Owner_glb"
+                "Sky_qRe_DSE4_Owner_glb"
             },
             factionExpulsion = {
-                -- faction expulsion forgiveness and timers
-                "Sky_Glb_ExpFightersGuild", "Sky_qRe_KWTG_Expelled_glb"
             },
             worldwide = {
                 -- mechanisms
-                "Sky_iRe_KW_RPVault_glb", "Sky_qRe_KW_MG06_PenumbraState", "Sky_qRe_KWTG06_Button_glb",
+                "Sky_qRe_KWMG6_PenumbraState", "Sky_qRe_KWTG6_Button_glb",
+
                 -- objects
-                "Sky_qRe_DSW01_LetterState_glb",
+                "Sky_qRe_DSW1_LetterState_glb",
+
                 -- npc behavior
-                "Sky_qRe_HA1_CultistState_glb", "Sky_qRe_HA3_Sick_glb", "Sky_qRe_KW_MG04_Returned_glb",
+                "Sky_qRe_HA1_CultistState_glb", "Sky_qRe_HA3_Sick_glb", "Sky_qRe_KWMG4_Returned_glb", "Sky_qRe_VF1_Returned_Glb",
+
                 -- arena State
                 "Sky_qRe_DSE_ArenaFight_glb"
             },
