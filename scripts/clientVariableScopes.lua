@@ -321,25 +321,31 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "TR_Mainland.ESM")
                 "tr_m3_bloodstone_help_O", "tr_m3_bloodstone_help_B", "tr_m3_bloodstone_help_N", "tr_m3_bloodstone_help_L",
                 -- player equipment
                 "TR_Hla_ScripCount", "TR_m3_EEC_CounterfeitCount", "TR_m3_EEC_CounterfeitReward",
-                "TR_m3_TT_FS_helm_on", "TR_m3_TT_InqMantle", "TR_m4_Bal_PowerChosen",
-                -- time
-                "TR_m4_Bal_AmuletDayUsed",
+                "TR_m3_TT_FS_helm_on", "TR_m3_TT_InqMantle", "TR_m4_Bal_PowerChosen", "TR_m7_Ns_FortunaAllowAccess",
+                "TR_m7_Ns_ScripGoldDiff", "TR_m7_Ns_ScripGoldSum",
                 -- quest variables that are already set correctly without being synced
                 "TR_m3_bloodstonecheck", "TR_m4_MenaanTowerDoorGlobal", "TR_m4_Shenjirra_Gate", "TR_m4_TG_AncylisDoorGlobal",
                 "TR_m4_TG_AndoSquatterSkooma", "TR_m4_TT_And_GoldCounter", "TR_m4_TT_And_GoldCounterB", "TR_m4_TT_And_ScripCounter",
-                "TR_m4_WillToGoOn_Willpower", "TR_m4_vampvictim_incell",
+                "TR_m4_WillToGoOn_Willpower", "TR_m4_vampvictim_incell", "TR_m7_EEC_SickGuar", "TR_m7_HH_Alvynu2_SlipInDesk",
+                "TR_m7_HOSewerAlert", "TR_m7_Ns_FortunaQuestActive", "TR_m7_Ns_JNS_4_AnderaFollow", "TR_m7_Ns_JNS_4_FollowState",
+                "TR_m7_Ns_JNS_4_ShouldFollow", "TR_m7_Ns_MG_Cont_glb", "TR_m7_Ns_TG_7_GoldIngots", "TR_m7_Ns_TG_7_GoldReward",
+                "TR_m7_q_CE_CanLeashWorkers", "TR_m7_q_CE_DetectedByWorker", "TR_m7_q_CE_Dividends",
                 -- unused
                 "TR_Kick_FG", "TR_Kick_TG", "TR_Kick_TT", "TR_Kick_IC", "TR_Kick_MG",
                 "TR_NecMQ_BoethiahRep", "TR_NecMQ_ICDestroyerRitual", "TR_NecMQ_ICMadmanRitual", "TR_NecMQ_MephalaRep",
                 "TR_m2_NisirelConfronted","TR_m2_Rent_Helnim_Flower", "TR_m2_Rent_Helnim_Racer", "TR_m3_OE_TowerGhostTimer",
                 "TR_m3_OE_smuggleeggsfound", "TR_m4_Andoth_AndasVaultGlobal", "TR_m4_Bal_MagicalLink", "TR_m4_VA_spellsword_glb",
-                "TR_m4_namirachest_glb", "TR_m4_q_vamplure_glb",
+                "TR_m4_namirachest_glb", "TR_m4_q_vamplure_glb", "TR_m7_AI_JNS_7_Alert", "TR_m7_HH_invest_bank",
+                "TR_m7_HH_invest_dravos", "TR_m7_HH_invest_nord", "TR_m7_HH_lefttocollect", "TR_m7_Ns_HH_LetterOpnd",
+                "TR_m7_q_rarethil_intimidated",
                 -- MWSE/openMW Lua
-                "TR_m1_FWMG_SupportLua"
+                "TR_m1_FWMG_SupportLua",
+                -- Will cause packet spam if synced
+                "TR_m7_HH_Alvynu_7_ShipTimer"
             },
             personal = {
                 -- player state
-                "TR_m2_q_35_PCVampire", "TR_m4_AndasGuestState",
+                "TR_m2_q_35_PCVampire", "TR_m4_AndasGuestState", "TR_m4_Bal_AmuletDayUsed",
                 -- tavern rents
                 "TR_m3_Rent_Bosmora_Starlight", "TR_m3_Rent_ED_Velk", "TR_m3_Rent_Gorne_EmeraldHaven",
                 "TR_m2_Rent_Hlersis_Spore", "TR_m2_Rent_Akamora_Gob", "TR_m2_Rent_InnBetween", "TR_m2_Rent_Necrom_Hostel",
@@ -350,16 +356,20 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "TR_Mainland.ESM")
                 "TR_m3_Rent_Salty_Futtocks", "TR_m3_Rent_Vhul_Hound", "TR_m3_Rent_Aimrah_Inn", "TR_m3_Rent_AT_HC", "TR_m3_Rent_AT_LS",
                 "TR_m4_Rent_Ando_Council_Club", "TR_m4_Rent_Bodrum", "TR_m4_Rent_Dancing_Cup", "TR_m4_Rent_Golden_Moons",
                 "TR_m4_Rent_Grey_Lodge", "TR_m4_Rent_Guar_No_Name", "TR_m4_Rent_Lucky_Shalaasa", "TR_m4_Rent_Omaynis",
-                "TR_m4_Rent_Teyn", "TR_m4_Rent_Uman",
+                "TR_m4_Rent_Teyn", "TR_m4_Rent_Uman", "TR_m7_Rent_AldMarak", "TR_m7_Rent_FightingChance", "TR_m7_Rent_HK_Hound",
+                "TR_m7_Rent_HK_Mudcrab", "TR_m7_Rent_MaarBani", "TR_m7_Rent_Mavandes", "TR_m7_Rent_Narsis_Canyon", "TR_m7_Rent_Narsis_Dragon",
+                "TR_m7_Rent_Narsis_Greenshade", "TR_m7_Rent_Narsis_LastDrop", "TR_m7_Rent_Narsis_Temple", "TR_m7_Rent_OthmuraMuck",
+                "TR_m7_Rent_SapphireSlouch", "TR_m7_Rent_SeptG_Niben", "TR_m7_Rent_StormGP_Saxhleel",
                 -- miscellaneous variables related to player-specific actions
                 "TR_m2_IC_HauntingShield", "TR_m3_Sa_TreramAlert", "TR_m3_q_AT_Armiger_Bid", "TR_m4_AA_SehutuAggro",
                 "TR_m3_Kha_Fountain_Cooldown", "TR_m3_Sa_PearlCurseTimer", "TR_m2_445_BlessingA", "TR_m2_445_BlessingS", "TR_m2_445_BlessingV",
                 "TR_m4_Andas_VaultBreakInGlobal", "TR_m4_TG_ArantamoDispChange", "TR_m4_TT_OrcHostile", "TR_m4_WLCR_GuardsWarn",
-                "TR_m4_q_AAB_moneystolen", "TR_m4_q_PickledFishStolen",
+                "TR_m4_q_AAB_moneystolen", "TR_m4_q_PickledFishStolen", "TR_m7_LongJump_var", "TR_m7_Narsis_2ndVaultPerm",
+                "TR_m7_Ns_ArenaBetAmount", 
                 -- Mercenary Contracts
                 "TR_Merc_m7_Amata_DaysLeft", "TR_Merc_m7_Amata_K_Day", "TR_Merc_m7_Amata_K_Month",
                 -- Other followers
-                "TR_m4_AA_JSuhkurrStatus", "TR_m4_AA_KhesurraStatus", "TR_m4_AA_TharmadalionStatus",
+                "TR_m4_AA_JSuhkurrStatus", "TR_m4_AA_KhesurraStatus", "TR_m4_AA_TharmadalionStatus", "TR_m7_AI_JNS_6_MarisFollow",
                 -- Pets
                 "TR_m3_OE_Pack_Guar_glob"
                 
@@ -370,13 +380,15 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "TR_Mainland.ESM")
                 "TR_m2_445_KeyVTracker",
                 -- reading of confidential documents
                 "TR_m3_q_AT_recipe_sealed", "TR_m3_TT_IduraUnseal", "TR_m4_AndoHH_LetterID", "TR_m4_AndoHH_UnsealLetter",
+                "TR_m7_HH_Dren_q_Orvas1_Seal", "TR_m7_HH_Dren_q_Vedam1_Seal", "TR_m7_HH_SvoshGlobal", "TR_m7_HH_UnsealedLlananu",
+                "TR_m7_Ns_HH_SarithaSeal", "TR_m7_q_LetterToSodreru_seal", "tr_m7_oth_q_eldavelletter_seal",
                 -- assassination quests
                 -- Note: These are related to kill counts, but they make more sense being shared across
                 --       players who share quests than being shared across players who share kills
                 "TR_m3_Zanammu_LichDead", "TR_m2_q_27_guardkilled", "TR_m2_q_35_dead", "TR_m3_q_4_dead", "TR_m3_OE_TG_AntioDead",
                 "TR_m3_TT_CalitiaPreKilled", "TR_m3_TT_Lloris5IndCount", "TR_m4_VysAssaDead", "TR_m3_KH_kraskiradead",
                 -- other side quests
-                "TR_HH_GM_enable_trainers","TR_M7_HR_AM_Q2_ShellDone","TR_m0_HH_NilenoLetter","TR_m0_YakinBaelQuestHook",
+                "TR_M7_HR_AM_Q2_ShellDone","TR_m0_HH_NilenoLetter","TR_m0_YakinBaelQuestHook",
                 "TR_m1_FG_Mashugsaved","TR_m1_FG_Salirazkill","TR_m1_FG_StalkerTrappedDay","TR_m1_FW_BrazenCrateSeen",
                 "TR_m1_FW_IC6_LoreCount","TR_m1_FW_TG6_Attack", "TR_m1_FW_TG6_BoneBroken", "TR_m1_FW_TG6_TimesCaught",
                 "TR_m1_FW_TG_StoneWorn","TR_m1_HT_FakeLedgerPlanted", "TR_m1_IC6_Daisychainglobal", "TR_m1_IL_Darnelltalked",
@@ -417,7 +429,31 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "TR_Mainland.ESM")
                 "TR_m4_VA_Ibinai_Truth", "TR_m4_VA_resetscout", "TR_m4_Vf_SenipalFreed", "TR_m4_q_AG_Votes",
                 "TR_m4_q_AG_Votes", "TR_m4_q_AG_candidate", "TR_m4_q_Euphoria_RingUsed", "TR_m4_q_PW_HibdunDrank",
                 "TR_m4_q_PW_ToldMusa", "TR_m4_q_WWWtalked", "TR_m4_q_drowned_infoalch", "TR_m4_q_drowned_infoissmi",
-                "TR_m4_q_drowned_infomages", "TR_m4_q_drowned_infopriest", "TR_m4_q_drowned_timepassed"
+                "TR_m4_q_drowned_infomages", "TR_m4_q_drowned_infopriest", "TR_m4_q_drowned_timepassed", "TR_m7_AI_JNS_3_BaryonGlob",
+                "TR_m7_AI_JNS_6_Glob", "TR_m7_AI_TT_HlerasConfrBefore", "TR_m7_AT_TG_Q6_Council_Booze", "TR_m7_EEC_Caravandelay",
+                "TR_m7_EEC_Feast", "TR_m7_EEC_Narsis2_itemcount", "TR_m7_EEC_Narsis3_weightsplace", "TR_m7_EEC_Narsis_Book",
+                "TR_m7_EEC_Narsis_Helm", "TR_m7_EEC_Narsis_Hide", "TR_m7_EEC_Narsis_Pot", "TR_m7_EEC_Narsis_Saltrice",
+                "TR_m7_EEC_Narsis_Shield", "TR_m7_EEC_Narsis_Skirt", "TR_m7_FamilyAffair_RavosReturn", "TR_m7_FamilyAffair_TalkUlyne",
+                "TR_m7_HH_Alvynu_4_SpeakerGhost", "TR_m7_HH_Alvynu_6_SpiritsDealt", "TR_m7_HH_AxeReturn", "TR_m7_HH_ElarFramed",
+                "TR_m7_HH_FirstFamily_smug", "TR_m7_HH_HasGuarLiver", "TR_m7_HH_fixbreach", "TR_m7_HH_grandmasterask",
+                "TR_m7_HL_FG_Q4_FightStarted", "TR_m7_HL_FG_Q5_SlavesFreed", "TR_m7_HL_FG_Q6_FightStarted", "TR_m7_HOGuideEnt",
+                "TR_m7_HOGuideInf", "TR_m7_HOGuideRuin", "TR_m7_HO_HFS_HouseOffer", "TR_m7_HO_TT_01_Donations",
+                "TR_m7_HO_TT_05_askedIda", "TR_m7_HO_TT_05_askedMG", "TR_m7_HO_TT_05_crooknotefound", "TR_m7_HO_TT_07_DadrysAngry",
+                "TR_m7_HR_AldIuval_q1_ShojaFree", "TR_m7_HindsightPlanted", "TR_m7_IC_FeedPoorCountAI", "TR_m7_IC_HL_AlmsAnnalina",
+                "TR_m7_IC_HL_AlmsBolnor", "TR_m7_IC_HL_AlmsCorter", "TR_m7_IC_HL_AlmsDithisi", "TR_m7_IC_HL_AlmsDoZhisi",
+                "TR_m7_IC_HL_AlmsHvithar", "TR_m7_IC_HL_AlmsKhazor", "TR_m7_IC_HL_AlmsLinriah", "TR_m7_IC_HL_AlmsPeleri",
+                "TR_m7_IC_HL_AlmsRuvene", "TR_m7_IC_HL_AlmsTaderi", "TR_m7_JNS_TheBoss_HammerReward", "TR_m7_Ns_ArenaCorrectDoor",
+                "TR_m7_Ns_ArenaFightChoice", "TR_m7_Ns_BilchabulBetray", "TR_m7_Ns_BilchabulSuryvnAngry", "TR_m7_Ns_Caravan_Casino",
+                "TR_m7_Ns_Caravan_Key", "TR_m7_Ns_FG_2_HasSilver", "TR_m7_Ns_FG_6_MinerState", "TR_m7_Ns_IC6_SavePriest",
+                "TR_m7_Ns_IL_3_Glob", "TR_m7_Ns_JNS_2_SoldGreydust", "TR_m7_Ns_JNS_4_Caught", "TR_m7_Ns_JNS_7_AttackTong",
+                "TR_m7_Ns_MG_Ench_Glb", "TR_m7_Ns_MG_QuestsDone_glb", "TR_m7_Ns_NucciusRumor", "TR_m7_Ns_StageFright_Mistakes",
+                "TR_m7_Ns_TG_4_Greydust", "TR_m7_Ns_TG_8_GuardState","TR_m7_Ns_TG_8_GuardWarn", "TR_m7_Ns_TG_8_HeistComplete",
+                "TR_m7_Ns_TG_9_GuardState", "TR_m7_Ns_TG_9_GuardWarn", "TR_m7_Ns_ToTheLastDropFound", "TR_m7_NymphAttack",
+                "TR_m7_Oth_BrothersLove_Glob", "TR_m7_Oth_MG_ApproachEndRoom", "TR_m7_Oth_MG_ApproachSigilBarr", "TR_m7_Oth_MG_ApproachTeleKey",
+                "TR_m7_Oth_MG_ApproachWaterRoom", "TR_m7_Oth_MG_MainDoorUnlocked", "TR_m7_Oth_MG_RubbleCleared", "TR_m7_Oth_MG_TeleDoorUnlocked",
+                "TR_m7_SM_QuestStarted", "TR_m7_Sdr_Defiling_MuranAsked", "TR_m7_Sharai_TL_Access", "TR_m7_ShiSha_HH_Q4Flin",
+                "TR_m7_ShiSha_Haunt_CleanCount", "TR_m7_TejNaFound", "TR_m7_VA_AniVamp_InfectCount", "TR_m7_q_AI_OrnadaCured",
+                "TR_m7_q_CE_WorkersBought", "TR_m7_q_CE_WorkersCollected", "tr_m7_Jhasa-DarFreed"
             },
             kills = {
                 "TR_HH_indorilspiritkill_glb", "TR_m1_HT_DralDead", "TR_m1_HT_EldaleDead", "TR_m1_HT_FarunaDead",
@@ -433,7 +469,15 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "TR_Mainland.ESM")
                 "TR_m4_RR_ArgoBanditGlob", "TR_m4_TG_SquatterDead", "TR_m4_VA_DeadAndas", "TR_m4_VA_deadhlaalu_glb",
                 "TR_m4_Vf_Mabrigash_Count", "TR_m4_VysAssaDead", "TR_m4_WillToGoOn_Dead", "TR_m4_baluathdead",
                 "TR_m4_q_Credkill", "TR_m4_q_TTSCoraneDead", "TR_m4_q_TTSFranDead", "TR_m4_q_TTSGhostDead",
-                "TR_m4_q_invadersdead_glb", "TR_m4_q_mm_Ashvudead", "TR_orlukhkillcount"
+                "TR_m4_q_invadersdead_glb", "TR_m4_q_mm_Ashvudead", "TR_orlukhkillcount", "TR_m7_AI_JNS_5_SmugglerDead",
+                "TR_m7_EEC_Shinathidead", "TR_m7_EEC_Tongdead", "TR_m7_EEC_farmerdeadcount", "TR_m7_EEC_killfarmers_glob",
+                "TR_m7_ErnasiViranDead", "TR_m7_EssurnashpiDeadCount", "TR_m7_HH_Alvynu2_Murder", "TR_m7_HH_Alvynu_7_CCKilled",
+                "TR_m7_HL_FG_Q2_DeadCount", "TR_m7_HL_FG_Q5_DeadCount", "TR_m7_HL_FG_Q6_DeadCount", "TR_m7_HO_HighAndDry_CrewKilled",
+                "TR_m7_HR_AM_Q1_AtemuNixDeath", "TR_m7_HR_AM_Q2_Shellcountdown", "TR_m7_HR_AM_Q4_BanditDead", "TR_m7_HR_WM_NilusDead",
+                "TR_m7_Kalk_Fight_GoblinDead", "TR_m7_Kalk_Fight_OrcDead", "TR_m7_KurikiDeadCount", "TR_m7_Narsis_SM_killed",
+                "TR_m7_NsTT_ShinApostKillCount", "TR_m7_Ns_ArenaBeast", "TR_m7_Ns_JNS_3_GuardiansKilled", "TR_m7_Ns_JNS_4_JandieGangKille",
+                "TR_m7_Ns_JNS_7_NegotiatorsDead", "TR_m7_Ns_StageFright_ActorKill", "TR_m7_Oth_MG_1_SquatterDead", "TR_m7_SuppliesSDPiratesGlobal",
+                "TR_m7_q_Zarathil_Smugglers"
             },
             factionRanks = {
                 -- Subfaction globals
@@ -442,6 +486,7 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "TR_Mainland.ESM")
                 "TR_m4_Om_ReRe_FacReq"
             },
             factionExpulsion = {
+                "TR_m7_HO_TT_04_MegaExpelled"
             },
             worldwide = {
                 -- mechanisms
@@ -460,12 +505,15 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "TR_Mainland.ESM")
                 "TR_FM_Glob_State", "TR_m7_NVA_BuildStage", "TR_m3_OE_ETCensus_RepairState", "TR_m3_OE_ETCensus_Stanchion",
                 "TR_m4_Oma_InnStage", "TR_m4_TG_AndoBaseBanners", "TR_m4_TG_AndoBaseBar", "TR_m4_TG_AndoBaseBeds",
                 "TR_m4_TG_AndoBaseCleanUp", "TR_m4_TG_AndoBasePlants", "TR_m4_TG_AndoBaseRugs", "TR_m4_TG_AndoBaseTraining",
-                "TR_m4_TG_AndoBaseTraps",
+                "TR_m4_TG_AndoBaseTraps", "TR_m7_LA4_EggMineStage",
                 -- objects
                 "TR_m1_q_Bthalagstate", "TR_m2_HT_Vaerin_Q6Done", "TR_m3_fiendrandomizer_glb",
                 "TR_m3_MaesabunMummyAwake", "TR_m3_AT_LatikaPitcher", "TR_m3_vontuswalk", "TR_m4_And_SheKindlySpoke_Stash",
                 "TR_m4_AndasTombFlame", "TR_m4_AndasTombState", "TR_m4_AndoHH_CrateRemove", "TR_m4_AndoHH_ShipDisable",
                 "TR_m4_AndoHH_ShipReleased", "TR_m4_TG_ThoriclesCheck", "TR_m4_VA_budaktrigger", "TR_m4_orlukhgate02_glb",
+                "TR_m7_GauntletPoorL_Taken_glb", "TR_m7_GauntletPoorR_Taken_Glb", "TR_m7_HH_Alvynu_7_FlsgrtActive",
+                "TR_m7_JNS_UddanuDaeCrossbowGlb", "TR_m7_SM_AlembicFound", "TR_m7_SM_CalcinatorFound", "TR_m7_SM_MortarFound",
+                "TR_m7_SM_RetortFound", "TR_m7_Sharai_WinchesterStolen",
                 -- people
                 "TR_NecMQ_SchemerState","TR_m1_IL_Arloteleported","TR_m1_IL_Darnellgoonce", "TR_m1_IL_Darnellwin",
                 "TR_m1_IL_guarstate", "TR_m1_TT_5_TimerOver", "TR_m1_q71_timeout","TR_m3_AT_RatFriend_Prison",
@@ -475,15 +523,23 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "TR_Mainland.ESM")
                 "TR_m4_DredaseDevani", "TR_m4_FG_AndasInVault", "TR_m4_FG_JubalGlobal", "TR_m4_FG_OrblosGlobal",
                 "TR_m4_HH_AnbarysGuardsMove", "TR_m4_HH_WorkerDisable", "TR_m4_SkelWiz_HlaaluEnabled", "TR_m4_TG_AndoSkoomaCat",
                 "TR_m4_TJ_OgrimStatus", "TR_m4_T_Nuccius_Delay", "TR_m4_Uman_B2_DiraBrought", "TR_m4_q_TMM_Bolsleave",
+                "TR_HH_GM_enable_trainers", "TR_m7_AI_JNS_4_Glob", "TR_m7_AI_TT_HouseSupport", "TR_m7_AI_TT_MuransFrustration",
+                "TR_m7_FelvynGangEnable", "TR_m7_HH_Alvynu_4_IlvrinActive", "TR_m7_HH_Alvynu_5_AssState", "TR_m7_HH_Alvynu_6_TombState",
+                "TR_m7_Ida_NetMoved", "TR_m7_JNS_TheBossAttacked", "TR_m7_MakingPeace_Return", "TR_m7_Ns_FortunaTongDisable",
+                "TR_m7_Ns_IL_6_VanikenDeadGlb", "TR_m7_Ns_SlavesAvailableArg", "TR_m7_Ns_SlavesAvailableKha", "TR_m7_Ns_SlavesAvailableOth",
+                "TR_m7_Oth_MG_1_SquatterState", "TR_m7_Proconsul_dead_glb", "TR_m7_VA_AniVamp_TestState", "TR_m7_VurvynOthrenDead",
                 -- both
                 "TR_m1_FG_StalkerTrapped", "TR_m3_Hal_TowerState", "TR_m3_veloth_shrine_spawncount", "TR_m4_Ando_HemmettePrison",
                 "TR_m4_FG_UshuFree", "TR_m4_HH_SaboteurAction","TR_m4_HH_SavrethiAlive", "TR_m4_HH_TeraniRescued",
                 "TR_m4_LostTransit_Control_glb", "TR_m4_LostTransit_Days_glb", "TR_m4_Om_ReRe_Ordinators", "TR_m4_TG_AndoAttack",
                 "TR_m4_TG_AndoShei6Global", "TR_m4_TG_AndoSideQuest", "TR_m4_TJ_Court_State", "TR_m4_TT_AndothrenFinale",
+                "TR_m7_IbbiSuen_MineState", "TR_m7_Ns_IL_3_Culprit", "TR_m7_Ns_MoonshinerEnds", "TR_m7_Ns_RescuePotLady_Moved",
                 -- events
                 "TR_FM_Glob_Weather", "TR_m3_OE_StendarrIdolsOutlawed", "TR_Thirr_Conflict_Score", "TR_Thirr_Conflict_Heat", 
                 "TR_m3_TT_g_ritstart", "TR_m4_NirnBoundGlobal1", "TR_m4_OssurClannfearGlobal", "TR_m4_TT_DepartDay",
-                "TR_m4_Vf_TimerGlb", "TR_m4_q_TTSCombatState"
+                "TR_m4_Vf_TimerGlb", "TR_m4_q_TTSCombatState", "TR_m7_Ns_ArenaCurrentDuel", "TR_m7_Ns_ArenaDuelActive",
+                "TR_m7_Ns_ArenaDuelBegun", "TR_m7_Ns_ArenaGenericFight", "TR_m7_Ns_IL_7_Raid", "TR_m7_Ns_StageFright_ActState",
+                "TR_m7_nightmotherattack"
             },
             unknown = {
                 
