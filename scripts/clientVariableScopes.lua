@@ -192,13 +192,11 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
             ignored = {
                 -- MWSE/openmw lua variables
                 "MWSE_BUILD", "T_Glob_OpenMwLuaUsed",
-
                 -- game state
                 "TR_MapPos", "TR_CellX", "TR_CellY", "TR_Test", "T_Glob_cleanup_x", "T_Glob_cleanup_y", 
                 "T_Glob_cleanup_z", "T_Glob_cleanup_state", "T_Glob_DWelk_cleanup", "T_Glb_GetTeleportingDisabled", 
                 "T_Glob_PassTimeHours", "T_Glob_GetTeleportingDisabled", "T_Glob_Speech_Debug", "T_Glob_Speech_Sway", 
                 "T_Glob_Speech_Haggle", "T_Glob_Speech_Debate", 
-                
                 -- card game
                 "T_Glob_CardHortX", "T_Glob_CardHortY",    "T_Glob_CardHortZ", "T_Glob_CardHortReshapeX", "T_Glob_CardHortReshapeY",
                 "T_Glob_CardHortCol1Len", "T_Glob_CardHortCol2Len", "T_Glob_CardHortCol3Len", "T_Glob_CardHortCol4Len",
@@ -208,25 +206,20 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
                 "T_Glob_CardHortCol5Lock2", "T_Glob_CardHortCol6Lock2", "T_Glob_CardHortSaveLoad", "T_Glob_CardHortActiveLen",
                 "T_Glob_CardHortTop", "T_Glob_CardHortDummy", "T_Glob_CardHortState", "T_Glob_CardHortTracker", "T_Glob_CardHortRow",
                 "T_Glob_CardHortRot", "T_Glob_CardHortRank", "T_Glob_CardHortCol", "T_Glob_CardHortHouse",
-
                 -- Nine holes
                 "T_Glob_NineholesBet", "T_Glob_NineholesGameState", "T_Glob_NineholesNpcId", "T_Glob_NineholesOpponentId",
                 "T_Glob_NineholesPlayerColor", "T_Glob_NineholesPlayerTurn", "T_Glob_NineholesPosTakenBy_01a", "T_Glob_NineholesPosTakenBy_01b",
                 "T_Glob_NineholesPosTakenBy_01c", "T_Glob_NineholesPosTakenBy_02a", "T_Glob_NineholesPosTakenBy_02b", "T_Glob_NineholesPosTakenBy_02c",
                 "T_Glob_NineholesPosTakenBy_03a", "T_Glob_NineholesPosTakenBy_03b", "T_Glob_NineholesPosTakenBy_03c", "T_Glob_NineholesPracticeMode",
                 "T_Glob_NineholesSelectedPin", 
-
                 -- Bank temp variable that doesn't need to be saved
                 "T_Glob_Bank_All_TempAmount",
-
                 -- Unused
                 "T_Glob_JNS_BountyClear"
-                
             },
             personal = {
                 -- player state
                 "T_Glob_PorphyricInfected", "T_Glob_WereInfected", "T_Glob_VampDamageRemove",
-                
                 -- Bank accounts
                 "T_Glob_Bank_All_CurrentBank", 
                 "T_Glob_Bank_Bri_AcctAmount", "T_Glob_Bank_Bri_LoanAmount", "T_Glob_Bank_Bri_LoanDate", "T_Glob_Bank_Bri_LoanFail",
@@ -234,7 +227,6 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
                 "T_Glob_Bank_Cro_AcctAmount", "T_Glob_Bank_Cro_LoanAmount", "T_Glob_Bank_Cro_LoanDate", "T_Glob_Bank_Cro_LoanFail",
                 "T_Glob_Bank_Hla_AcctAmount", "T_Glob_Bank_Hla_LoanAmount", "T_Glob_Bank_Hla_LoanDate", "T_Glob_Bank_Hla_LoanFail",
                 "T_Glob_Bank_Mas_AcctAmount", "T_Glob_Bank_Mas_LoanAmount", "T_Glob_Bank_Mas_LoanDate", "T_Glob_Bank_Mas_LoanFail",
-
                 -- stock market, variable tracking how many stocks a player owns
                 "T_Glob_StockCompareATC", "T_Glob_StockCompareBIC", "T_Glob_StockCompareCMC", "T_Glob_StockCompareCWA",
                 "T_Glob_StockCompareEEC", "T_Glob_StockCompareNWT", "T_Glob_StockCompareRHC", "T_Glob_StockCompareSTC",
@@ -244,39 +236,31 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
                 "T_Glob_StockPayout010", "T_Glob_StockPayout050", "T_Glob_StockPayout100", "T_Glob_StockPayoutAll",
                 "T_Glob_StockRequest", "T_Glob_StockSellCount", "T_Glob_StockSellPrice", "T_Glob_StockStarted",
                 "T_Glob_StockValueTradedToday"
-                
             },
             quest = {
                 -- reputation
                 "T_Glob_Rep_Cyr", "T_Glob_Rep_HR", "T_Glob_Rep_Ham", "T_Glob_Rep_MW", 
                 "T_Glob_Rep_PI", "T_Glob_Rep_Sky",
-
                 -- stock market prices, these react to quest outcomes
                 "T_Glob_StockBaseATC", "T_Glob_StockBaseBIC", "T_Glob_StockBaseCMC", "T_Glob_StockBaseCWA",
                 "T_Glob_StockBaseEEC", "T_Glob_StockBaseNWT", "T_Glob_StockBaseRHC", "T_Glob_StockBaseSTC",
                 "T_Glob_StockBaseWSC", "T_Glob_StockPriceATC", "T_Glob_StockPriceBIC", "T_Glob_StockPriceCMC",
                 "T_Glob_StockPriceCWA", "T_Glob_StockPriceEEC", "T_Glob_StockPriceNWT", "T_Glob_StockPriceRHC",
                 "T_Glob_StockPriceSTC", "T_Glob_StockPriceWSC"
-
             },
             kills = {
-            
             },
             factionRanks = {
-                
             },
             factionExpulsion = {
                 -- Cyrodiil faction explusions
                 "T_Glob_Exp_Cyr_FG", "T_Glob_Exp_Cyr_TG", "T_Glob_Exp_Itin_Priests", "T_Glob_Exp_King_Anv",
-
                 -- Skyrim faction explusions
                 "T_Glob_Exp_Sky_FG", "T_Glob_Exp_Sky_TG" 
-                
             },
             worldwide = {
                 -- mechanisms
                 "T_Glob_SutchElevDir", "T_Glob_SutchElevRest", "T_Glob_SutchElevUpDownCounter",
-
                 -- Daedric wards
                 "T_Glob_DaeWardAState", "T_Glob_DaeWardBState", "T_Glob_DaeWardCState", "T_Glob_DaeWardDState",
                 "T_Glob_DaeWardEState", "T_Glob_DaeWardFState", "T_Glob_DaeWardGState", "T_Glob_DaeWardHState",
@@ -284,23 +268,19 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Tamriel_Data.ESM"
                 "T_Glob_DaeWardMState", "T_Glob_DaeWardNState", "T_Glob_DaeWardOState", "T_Glob_DaeWardPState",
                 "T_Glob_DaeWardQState", "T_Glob_DaeWardRState", "T_Glob_DaeWardSState", "T_Glob_DaeWardTState",
                 "T_Glob_DaeWardUState", "T_Glob_DaeWardVState", "T_Glob_DaeWardWState", "T_Glob_DaeWardZState",
-
                 -- objects
                 "T_Glob_KingOrgCoffer_Uses", "T_Glob_KingOrgCoffer_Gold", "T_Glob_PlesioHatchPC", "T_Glob_TR_PreviewEnabled",
-
                 -- news
                 "T_Glob_News_AbMonitor_Pick1", "T_Glob_News_AbMonitor_Pick2", "T_Glob_News_AbMonitor_Tracker1", "T_Glob_News_AbMonitor_Tracker2",
                 "T_Glob_News_Bellman_Pick1", "T_Glob_News_Bellman_Pick2", "T_Glob_News_Bellman_Tracker1", "T_Glob_News_Bellman_Tracker2",
                 "T_Glob_News_Echo_Pick1", "T_Glob_News_Echo_Pick2", "T_Glob_News_Echo_Tracker1", "T_Glob_News_Echo_Tracker2",
-
                 -- PTR interop variables, set via startup scripts
                 "T_Glob_Installed_ABC", "T_Glob_Installed_Bkm", "T_Glob_Installed_Els", "T_Glob_Installed_HR427",
                 "T_Glob_Installed_Ham", "T_Glob_Installed_PC", "T_Glob_Installed_PI", "T_Glob_Installed_SHotN",
                 "T_Glob_Installed_Sum", "T_Glob_Installed_TR", "T_Glob_Installed_TRFM", "T_Glob_Installed_Val",
                 "T_Glob_VanillaOverride"
             },
-            unknown = {
-                
+            unknown = { 
             }
         }
     }
@@ -372,7 +352,6 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "TR_Mainland.ESM")
                 "TR_m4_AA_JSuhkurrStatus", "TR_m4_AA_KhesurraStatus", "TR_m4_AA_TharmadalionStatus", "TR_m7_AI_JNS_6_MarisFollow",
                 -- Pets
                 "TR_m3_OE_Pack_Guar_glob"
-                
             },
             quest = {
                 -- main quest
@@ -542,7 +521,6 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "TR_Mainland.ESM")
                 "TR_m7_nightmotherattack"
             },
             unknown = {
-                
             }
         }
     }
@@ -559,10 +537,8 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Cyr_Main.esm") th
                 "PC_FavorAkatosh", "PC_FavorArkay", "PC_FavorDibella", "PC_FavorJulianos",
                 "PC_FavorKynareth", "PC_FavorMara", "PC_FavorStendarr", "PC_FavorTalos",
                 "PC_FavorZenithar", "PC_Glb_ExpFightersGuild", "PC_m1_MG_Cha2_Debt",
-
                 -- Player equipment
                 "PC_m1_AFP_Costume_sc",
-
                 -- Set correctly as is
                 "PC_m0_Vva_TropVac_Dest", "PC_m0_Vva_TropVac_Hours", "PC_m1_Anv_Bounty_CrypsisHours"
             },
@@ -571,19 +547,16 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Cyr_Main.esm") th
                 "PC_m1_Rented_Abecette", "PC_m1_Rented_AllFlags", "PC_m1_Rented_AnchorsRest", "PC_m1_Rented_BlindWatchtower",
                 "PC_m1_Rented_Caravan", "PC_m1_Rented_Crossing", "PC_m1_Rented_Gosha", "PC_m1_Rented_IronMan",
                 "PC_m1_Rented_OldSeawater", "PC_m1_Rented_Spearmouth", "PC_m1_Rented_Sunset",
-
                 -- Mercenary Contracts
                 "PC_m1_M_CylinaDaysLeft", "PC_m1_M_CylinaStartDay", "PC_m1_M_CylinaStartMonth",
                 "PC_m1_M_SeguriusDaysLeft", "PC_m1_M_SeguriusStartDay", "PC_m1_M_SeguriusStartMonth",
                 "PC_m1_M_TorbarnDaysLeft", "PC_m1_M_TorbarnStartDay", "PC_m1_M_TorbarnStartMonth",
-
                 -- player actions
                 "PC_m0_Vva_TropVac_TravelKaltan", "PC_m0_Vva_TropVac_TravelTitus", "PC_m1_Anv_BlkView_Detected", "PC_m1_Anv_BlkView_SoulGemType",
                 "PC_m1_Anv_WorkOrc_Disp", "PC_m1_CrypsisCrew_Aggro", "PC_m1_IP_Lki4_StateRitual", "PC_m1_IP_Lki_DibellanKilled",
                 "PC_m1_IP_Run2_Killed", "PC_m1_PadrulRingState", "PC_m1_SC_GarAge_ArchaeKilled", "PC_m1_SC_GarAge_AuroranSummoned",
                 "PC_m1_SC_GarAge_BucynarelKeyst", "PC_m1_SC_GoatTrbls_Attacked", "PC_m1_TG_Anv4_BetAmount", "PC_m1_TG_Anv4_BetState",
                 "PC_m1_TG_Anv4_WinAmount", "PC_m1_TG_Cha4_Detected",
-
                 -- Once off rumor variables
                 "PC_m1_Anv_WellMet_DialFilter", "PC_m0_Vva_TropVac_Rumor"
             },
@@ -599,7 +572,6 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Cyr_Main.esm") th
                 "PC_m1_K1_MC8_Aftermath", "PC_m1_K1_RP2_CultTalked", "PC_m1_K1_RP3_NoCash", "PC_m1_MG_BC1_TorioTalked",
                 "PC_m1_MG_BC3_RingCheck", "PC_m1_MG_Cha4_AuroranSummon", "PC_m1_MG_Cha4_BigUpArdavan", "PC_m1_StrokeFort_BeatUp",
                 "PC_m1_TG_Anv7_Outcome", "PC_m1_TG_Anv7_Points", "PC_m1_Tvy_NobleDebt_Convinced",
-
                 -- Bounty quests
                 "PC_m1_Anv_Bounty_AnnkaCaptured", "PC_m1_Anv_Bounty_MCCaptured", "PC_m1_Anv_Bounty_RueCaptured", "PC_m1_Anv_Bounty_RycimaCaptured"
             },
@@ -610,26 +582,21 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Cyr_Main.esm") th
                 "PC_m1_MG_Cha4_GobsKilled", "PC_m1_Tvy_ThresvyDef_Kills"
             },
             factionRanks = {
-                
             },
             factionExpulsion = {
-
             },
             worldwide = {
                 -- mechanisms
                 "PC_m1_FHe_GateState", "PC_m1_FSm_WallState",
-
                 -- Actor/object state variables
                 "PC_m1_Anv_Bounty_CrypsisMoved", "PC_m1_Anv_EnmanAirshipState", "PC_m1_Anv_EnmanAirshipState", "PC_m1_Anv_WellMet_TrackReymanus",
                 "PC_m1_Anv_WellMet_TrackWynn", "PC_m1_Cha_GhastOrd_Moved", "PC_m1_Cha_GoldNets_Meeting", "PC_m1_Cha_MG_NymonaHatchGlob",
                 "PC_m1_FHe_ElvState","PC_m1_IP_Als1_Return", "PC_m1_IP_HY_StateMove", "PC_m1_K1_HT1_StateSonkha",
                 "PC_m1_K1_HT4_MeetDay", "PC_m1_K1_RP2_WallFixed", "PC_m1_K1_VT_KyroState", "PC_m1_TG_Cha4_DI",
-
                 -- Arena state
                 "PC_m1_AFP_DuelActive", "PC_m1_AFP_DuelCurrent", "PC_m1_AFP_DuelMulti", "PC_m1_TG_Anv4_MatchState"
             },
             unknown = {
-                
             }
         }
     }
@@ -644,10 +611,8 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Sky_Main.esm") th
             ignored = {
                 -- game state
                 "Sky_TempVar_glb",
-
                 -- quest variables that are already set correctly without being synced
                 "Sky_qRe_DSW4_BreadCounter_glb",
-
                 -- not actually used at all
                 "Sky_qRe_DH5_Wine_glb", "Sky_qRe_DSE_Register04_glb", "sky_qRe_KG4_AmbCount", "sky_qRe_KG4_Day", 
                 "sky_qRe_KG4_Day2" 
@@ -657,11 +622,9 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Sky_Main.esm") th
                 "Sky_Rent_DSE_Shadowkey", "Sky_Rent_DSW_DragonFountain", "Sky_Rent_DSW_NukraTikil", 
                 "Sky_Rent_HA_Jhorcian", "Sky_Rent_KW_Dancing_Saber", "Sky_Rent_KW_Ruby_Drake",
                 "Sky_Rent_LH_Daracam", "Sky_Rent_MER_Rhuma", "Sky_Rent_VF_EvenOddsInn",
-
                 -- mercenary contracts
                 "Sky_Merc_Rismund_DaysLeft", "Sky_Merc_KW_Rismund_K_Day", "Sky_Merc_KW_Rismund_K_Month",
                 "Sky_Merc_DSW_Zanarhi_DaysLeft", "Sky_Merc_DSW_Zanarhi_K_Day", "Sky_Merc_DSW_Zanarhi_K_Month",
-
                 -- miscellaneous variables related to player-specific actions
                 "Sky_qRe_BM4_Door_glb", "Sky_qRe_HA1_SkullPlaced_glb", "Sky_qRe_KW1a_Journal_glb", "Sky_qRe_KW1b_Journal_glb",
                 "Sky_qRe_KW1c_Journal_glb", "Sky_qRe_KW1d_Journal_glb", "Sky_qRe_KW_SogatAggro"
@@ -676,19 +639,16 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Sky_Main.esm") th
             kills = {
                 -- main quest
                 "Sky_qRe_DSMQ_AlaktolDead", "Sky_qRe_DSMQ_JonaDead",
-
                 -- side quests
                 "Sky_qRe_DSW1_MesaraDead_glb", "Sky_qRe_BM_FhegainDead_glb", "Sky_qRe_HA1_KillCheck_glb", "Sky_qRe_KG1_glb", 
                 "Sky_qRe_KG2_Counter_glb", "Sky_qRe_KG4_Counter", "Sky_qRe_KW3_Counter_glb", "sky_qRe_KWFG3_Counter",
                 "Sky_qRe_KWMG6_Counter_glb", "Sky_qRe_VF1_Died_Glb", "Sky_qRe_MAI03_Counter_glb", "Sky_qRe_MAI4_Dead_glb",
-
                 -- arena kill counts
                 "Sky_qRe_DSE4_Count02_glb", "Sky_qRe_DSE4_Count03_glb", "Sky_qRe_DSE4_Count05_glb", "Sky_qRe_DSE4_Count07_glb"
             },
             factionRanks = {
                 -- faction reputation
                 "Sky_qRe_DSMG_Rep_Glb", "Sky_Rep_FireHand_glb",
-
                 -- membership in mini-factions
                 "Sky_qRe_DSE4_Owner_glb"
             },
@@ -697,18 +657,14 @@ if tableHelper.containsCaseInsensitiveString(clientDataFiles, "Sky_Main.esm") th
             worldwide = {
                 -- mechanisms
                 "Sky_qRe_KWMG6_PenumbraState", "Sky_qRe_KWTG6_Button_glb",
-
                 -- objects
                 "Sky_qRe_DSW1_LetterState_glb",
-
                 -- npc behavior
                 "Sky_qRe_HA1_CultistState_glb", "Sky_qRe_HA3_Sick_glb", "Sky_qRe_KWMG4_Returned_glb", "Sky_qRe_VF1_Returned_Glb",
-
                 -- arena State
                 "Sky_qRe_DSE_ArenaFight_glb"
             },
             unknown = {
-                
             }
         }
     }
